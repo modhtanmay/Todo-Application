@@ -1,0 +1,13 @@
+<h2>Welcome {{name}}!!</h2>
+<div class="container">
+    You can manage your TODOS <a routerLink="/todos">here</a>
+</div>
+<div class="container">
+    Click here to get customized welcome message
+    <button (click)="getVariableWelcomeMsg()" class="btn btn-success">Get Welcome Message</button>
+</div>
+
+<div class="container">
+    {{msg}}
+    {{errorMsg}}
+</div>
